@@ -49,8 +49,9 @@ h3{
 }
 
 h4{
-    font-size: 2rem; 
+    font-size: 2.2rem; 
     font-family: LostType;
+    transform: translateY(-15%);
 }
 
 

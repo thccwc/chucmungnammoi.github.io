@@ -21,7 +21,7 @@ body {
 h1 {
   position: absolute;
   top: 10%;
-  right: 30%;
+  right: 28%;
   font-size: 26rem;
   margin: 0;
   z-index: -2;
@@ -34,7 +34,7 @@ h1 {
 
 h2 {
   position: absolute;
-  bottom: 20%;
+  bottom: 24%;
   right: 5%;
   font-family: LostType;
   font-size: 1.2rem;
@@ -49,10 +49,10 @@ h2 {
 
 .girl {
   position: absolute;
-  height: 13rem;
+  height: 14.5rem;
   width: auto;
   bottom: auto; 
-  top: 15%; 
+  top: 7%; 
   left: -5%; 
   transform: translateY(-20%); 
   z-index: -1;
@@ -109,6 +109,6 @@ h2 {
 .butterfly4 {
   position: absolute;
   transform: rotate(29.06deg);
-  top: 15%;
+  top: 10%;
   left: 15%;
 }
