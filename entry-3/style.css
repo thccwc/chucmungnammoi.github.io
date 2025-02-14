@@ -1,0 +1,37 @@
+@font-face {
+    font-family: LostType;
+    src: url('LostType2023-Regular.otf') format('truetype');
+  }
+
+ body {
+    background-image: url("bg.PNG");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    margin: 0; 
+}
+
+p {
+    font-family: LostType;
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    
+  }
+  
+  .side{
+    flex: 5;
+    height: 100vh;
+    color: black;
+    overflow: scroll;
+    line-height: auto;
+  }
+  
+  .content{
+    flex: 5;
+    height: 100vh;
+    overflow: scroll;
+    line-height: auto;
+  }
