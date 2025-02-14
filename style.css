@@ -1,0 +1,114 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url('DFVN Guardilostra.ttf') format('truetype');
+}
+
+body {
+  background-image: url("bg.PNG");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  overflow: hidden; /* Prevent scrolling */
+  height: 100vh; /* Ensure it fits within the viewport */
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  position: absolute;
+  top: 10%;
+  right: 30%;
+  font-size: 26rem;
+  margin: 0;
+  z-index: -2;
+  color: #d9cba2;
+  text-align: right;
+  opacity: 70%;
+  filter: blur(4px);
+  white-space: nowrap;
+}
+
+h2 {
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+  font-family: LostType;
+  font-size: 1.2rem;
+  color: #d9cba2;
+  text-align: right;
+  opacity: 70%;
+  filter: blur(1px);
+  word-wrap: break-word;
+  max-width: 15rem;
+  z-index: -2;
+}
+
+.girl {
+  position: absolute;
+  height: 13rem;
+  width: auto;
+  bottom: auto; 
+  top: 15%; 
+  left: -5%; 
+  transform: translateY(-20%); 
+  z-index: -1;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+}
+
+.tooltip-text {
+  position: absolute;
+  bottom: -50px;
+  left: 70%;
+  background-color: rgba(55, 39, 20, 0.8);
+  border-radius: 50%;
+  z-index: 0;
+  box-shadow: 0px 0px 20px 20px rgba(55, 39, 20, 0.8);
+  transform: translateX(-50%);
+  color: #d9cba2;
+  padding: 3px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip:hover .tooltip-text {
+  opacity: 1;
+}
+
+.butterfly1 {
+  position: absolute;
+  transform: rotate(29.66deg);
+  top: 34%;
+  left: 70%;
+}
+
+.butterfly2 {
+  position: absolute;
+  transform: rotate(28.11deg);
+  top: 40%;
+  left: 10%;
+}
+
+.butterfly3 {
+  position: absolute;
+  transform: rotate(-9.28deg);
+  top: 60%;
+  left: 50%;
+}
+
+.butterfly4 {
+  position: absolute;
+  transform: rotate(29.06deg);
+  top: 15%;
+  left: 15%;
+}
