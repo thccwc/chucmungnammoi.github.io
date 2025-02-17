@@ -42,35 +42,92 @@ h1 {
               <img src="girl.PNG">   
             </div>
           
-            <div class="tooltip" style="top: 325px; right: 500px;">
-              <a href="entry-1/index.html">
-                <img class="butterfly1" src="butterfly1.PNG" style="width:16rem;height:auto;">
-              </a>
-              <span class="tooltip-text">CALENDAR</span>
-            </div>
-          
-            <div class="tooltip" style="top: 500px; left: 137.82px;">
-              <a href="entry-2/index.html">
-                <img class="butterfly2" src="butterfly2.PNG" style="width:16rem;height:auto;">
-              </a>
-              <span class="tooltip-text">LOCATION</span>
-            </div>
-          
-            <div class="tooltip" style="top: 600.39px; left: 790px;">
-              <a href="entry-3/index.html">
-                <img class="butterfly3" src="butterfly3.PNG" style="width:18rem;height:auto;">
-              </a>
-              <span class="tooltip-text">MENU</span>
-            </div>
-          
-            <div class="tooltip" style="top: 80px; left: 150.19px;">
-              <a href="entry-4/index.html">
-                <img class="butterfly4" src="butterfly4.PNG" style="width:12rem;height:auto;">
-              </a>
-              <span class="tooltip-text">HOMEPAGE</span>
-            </div>
-          </body>
-          
+        <svg width="100vw" height="100vh" viewBox="0 0 900 600" style="position: absolute;">
+            <defs>
+                <filter id="blur-glow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stdDeviation="15" result="blur"/>
+                    <feMerge>
+                        <feMergeNode in="blur"/>
+                        <feMergeNode in="blur"/>  
+                    </feMerge>
+                </filter>
+            </defs>
+            <a href="https://example.com/butterfly1" target="_blank" class="butterfly-link">
+                <circle class="butterfly-glow" cx="552" cy="485" r="55"></circle>
+                <g class="butterfly butterfly1">
+                    <g class="left-wing">
+                        <image href="leftwing.PNG" width="200px" height="300px" x="99.5" y="90"/>
+                    </g>        
+                    <g class="right-wing">
+                        <image href="rightwing.PNG" width="200px" height="300px" x="100" y="90"/>
+                    </g>
+                    <g class="body">
+                        <image href="body.PNG" width="280px" height="400px" x="60.2" y="48"/>
+                    </g>
+                </g>
+            </a>
+            
+        
+            <a href="https://example.com/butterfly2" target="_blank" class="butterfly-link">
+                <circle class="butterfly-glow" cx="715" cy="262" r="40"></circle>
+                <g class="butterfly butterfly2">
+                    <g class="left-wing2">
+                        <image href="leftwing2.PNG" width="200px" height="300px" x="99.5" y="90"/>
+                    </g>        
+                    <g class="right-wing2">
+                        <image href="rightwing2.PNG" width="200px" height="300px" x="100" y="90"/>
+                    </g>
+                    <g class="body2">
+                        <image href="body2.PNG" width="280px" height="400px" x="60.2" y="48"/>
+                    </g>
+                </g>
+            </a>
+        
+            
+            <a href="https://example.com/butterfly3" target="_blank" class="butterfly-link">
+                <circle class="butterfly-glow" cx="122" cy="90" r="50"></circle>
+                <g class="butterfly butterfly3">
+                    <g class="left-wing">
+                        <image href="leftwing3.PNG" width="200px" height="300px" x="99.5" y="90"/>
+                    </g>        
+                    <g class="right-wing">
+                        <image href="rightwing3.PNG" width="200px" height="300px" x="100" y="90"/>
+                    </g>
+                    <g class="body">
+                        <image href="body3.PNG" width="280px" height="400px" x="60.2" y="48"/>
+                    </g>
+                </g>
+            </a>
+        
+            
+            <a href="https://example.com/butterfly4" target="_blank" class="butterfly-link">
+                <circle class="butterfly-glow" cx="160" cy="356" r="40"></circle>
+                <g class="butterfly butterfly4">
+                    <g class="left-wing4">
+                        <image href="leftwing4.PNG" width="300px" height="300px" x="55.4" y="106"/> 
+                    </g>
+                    <g class="right-wing4">
+                        <image href="rightwing4.PNG" width="300px" height="300px" x="56" y="106"/>
+                    </g>
+                    <g class="body">
+                        <image href="body4.PNG" width="295px" height="400px" x="57" y="54"/> 
+                    
+                </g>
+            </a>
+        </svg>
+        <div class="tooltip" style="top: 90px; left: 90px;">
+            <div class="tooltip-text">First Butterfly</div>
+        </div>
+        <div class="tooltip" style="top: 480px; left: 90px;">
+            <div class="tooltip-text">Second Butterfly</div>
+        </div>
+        <div class="tooltip" style="top: 300px; left: 850px;">
+            <div class="tooltip-text">Third Butterfly</div>
+        </div>
+        <div class="tooltip" style="top: 600px; left: 600px;">
+            <div class="tooltip-text">Fourth Butterfly</div>
+        </div>
+                   
         <script src="" async defer></script>
     </body>
 </html>
