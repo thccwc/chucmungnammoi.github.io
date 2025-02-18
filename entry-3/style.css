@@ -1,6 +1,11 @@
 @font-face {
     font-family: LostType;
     src: url('LostType2023-Regular.otf') format('truetype');
+
+  }
+@font-face {
+    font-family: DFVN;
+    src: url('DFVN Guardilostra.ttf') format('truetype');
   }
 
  body {
@@ -11,10 +16,64 @@
     margin: 0; 
 }
 
+h1{
+  font-family: DFVN;
+  font-size: 13rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header {
+  margin-top: -4rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%; 
+  padding: 10px 0;
+  margin-top: -3rem;
+  padding-bottom:20px;
+  border-bottom: thick double #281A08;  
+}
+
+.js-anchor-link {
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: DFVN;
+  color: black; 
+  padding: 10px 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.js-anchor-link:hover {
+  color: rgb(92, 70, 44);
+  text-shadow: 0px 0px 20px rgba(237, 241, 194, 0.865);
+}
+
+
 p {
     font-family: LostType;
     padding: 20px;
 }
+
+.dotted-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%; 
+  padding: 20px;
+  font-family: LostType;
+  font-size:0.8rem;
+}
+
+.dots {
+  flex-grow: 1;
+  border-bottom: 2px dotted black; 
+  margin: 0 10px; 
+}
+
 
 .container{
     display: flex;
