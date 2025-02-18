@@ -36,3 +36,23 @@ svg text {
 text {
     filter: url(#blur-filter);
 }
+
+
+
+@media (min-width: 768px) and (max-width: 1366px) {
+	article {
+	transform:scale(1.5)translateY(-5%);
+    }
+}
+
+@media (max-width: 768px) {
+	article {
+	transform:scale(2) translateY(5%);
+	}
+}
+
+@media (max-width: 480px) {
+	article {
+	transform:scale(4) translateY(3%);
+	}
+}
