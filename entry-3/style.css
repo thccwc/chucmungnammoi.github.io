@@ -68,6 +68,7 @@ p {
   font-size:0.8rem;
 }
 
+
 .dots {
   flex-grow: 1;
   border-bottom: 2px dotted black; 
@@ -75,22 +76,68 @@ p {
 }
 
 
-.container{
-    display: flex;
+.container {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.side, .content {
+  flex: 1; 
+  box-sizing: border-box;
+  overflow-y: auto; 
+  padding: 20px;
+}
+
+.side img, .content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.side h2, .content h2{
+  font-family: DFVN;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+.content { overflow-y: auto; height: 100vh; }
+.side { overflow-y: auto; height: 100vh; }
+
+.side {
+  width: 50%; 
+}
+
+.content {
+  width: 50%;}
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; 
+    }
+  
+    .side, .content {
+      width: 100%;
+      margin-bottom: 100px; 
+      overflow-y: visible;
+    }
+    h1 {
+      font-size: 5rem;
+      padding:30px;
+    }
+  
+    h2 {
+      font-size: 2rem; 
+    }
+  
+    p {
+      font-size: 1rem; 
+    }
+  
     
+    .js-anchor-link {
+      font-size: 1.5rem; 
+    }
   }
+
   
-  .side{
-    flex: 5;
-    height: 100vh;
-    color: black;
-    overflow: scroll;
-    line-height: auto;
-  }
-  
-  .content{
-    flex: 5;
-    height: 100vh;
-    overflow: scroll;
-    line-height: auto;
-  }
