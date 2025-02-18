@@ -1,3 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  
+    width: 100vw;
+}
 body {
     background-image: url("bg.PNG");
     background-repeat: no-repeat;
@@ -14,6 +20,7 @@ body {
     position: absolute;
     text-align: center;
     color: #281A08; 
+    overflow-x: hidden;
 }
 
 h1 {
@@ -34,7 +41,7 @@ h2 {
     border-bottom: thick double #281A08;    
     justify-content: space-evenly; 
     gap: 10px; 
-    object-fit: cover;
+    object-fit: contain;
 }
 
 
@@ -101,4 +108,133 @@ section.active {
 	bottom: 150px;
 	padding: 7px;
 	margin: 0;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 12rem;
+        margin-top: 20px;
+        margin-bottom: -30px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        letter-spacing: 3rem;
+        margin-left: 40px;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    .container1 {
+        padding: 10px;
+    }
+
+    .image {
+            width: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        padding-bottom: 40px;
+    }
+
+    section {
+        width: 70%;
+        max-width: 300px;
+        height: auto;
+        padding: 10px 20px;
+    }
+    body, .container1, .container {
+        overflow-x: hidden;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body, .container1, .container {
+        overflow-x: hidden;
+    }
+    h1 {
+        font-size: 8rem;
+        margin-top: 15px;
+        margin-bottom: -20px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        letter-spacing: 2rem;
+        margin-left: 20px;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .container1 {
+        padding: 5px;
+        overflow-x: hidden;
+    }
+
+    .image {
+        padding-bottom: 30px;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    section {
+        width: 80%;
+        max-width: 280px;
+        height: auto;
+        padding: 10px 15px;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 6rem;
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+        letter-spacing: 1rem;
+        margin-left: 10px;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    .container1 {
+        padding: 5px;
+    }
+
+    .image {
+            max-width: 100%;
+            height: auto;
+        padding-bottom: 20px;
+    }
+
+    section {
+        width: 90%;
+        max-width: 250px;
+        height: auto;
+        padding: 10px;
+    }
 }

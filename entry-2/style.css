@@ -20,6 +20,7 @@ article {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transform:translateY(5%);
 }
 svg{
 	overflow: visible;
