@@ -214,9 +214,9 @@ body {
 @media (min-width: 768px) and (max-width: 1366px) {
   
   h1 {
-    font-size: 12rem;
+    font-size: 24rem;
     right: 15%;
-    transform: scale(2) translateY(5%);
+    top: 5%;
 }
 
 h2 {
@@ -321,7 +321,7 @@ overflow: hidden;
   }
 
   h2 {
-      opacity:0;
+    display: none;
   }
 
   .butterfly-link:hover .butterfly-glow {
