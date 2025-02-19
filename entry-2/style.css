@@ -78,14 +78,9 @@ body {
   padding:2rem;
   font-family: LostType;
   text-align: center;
-  cursor: pointer;
+  
 }
 
-.card.revealed {
-    background: url('butterfly2.PNG') no-repeat center center;
-    background-size: contain;
-    transform: rotate(10deg) scale(1.2);
-}
 
 .card:nth-child(1) {
   grid-area: a;
