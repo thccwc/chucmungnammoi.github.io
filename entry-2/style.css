@@ -141,6 +141,10 @@ h1 {
   margin-block: 1rem;
 }
 
+.card:hover, .card.active{
+	color:#9c7e4b;
+}
+
 
 
 article {
